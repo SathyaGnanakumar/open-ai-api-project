@@ -1,11 +1,11 @@
 from openai import OpenAI
 from pydub import AudioSegment
 import math
+import os
 from docx import Document
 
-# Initialize the client with your API key
 client = OpenAI(
-    api_key='sk-proj-NxQYACsIlM8gR8sha6abT3BlbkFJuHDZjuAlmedrHjJRg6Wa'
+    api_key=os.environ["OPENAI_API_KEY"]
 )
 
 def split_audio(file_path, chunk_length_sec=60):  # Adjust chunk length as needed

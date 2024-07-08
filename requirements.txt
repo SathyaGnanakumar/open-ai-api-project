@@ -2,3 +2,7 @@ openai
 pandas
 numpy
 python-dotenv
+flask
+pydub 
+docx
+requests

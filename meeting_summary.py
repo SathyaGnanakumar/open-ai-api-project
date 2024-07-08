@@ -2,10 +2,11 @@ from openai import OpenAI
 from pydub import AudioSegment
 from docx import Document
 import math
+import os
 
 # Initialize the client with your API key
 client = OpenAI(
-    api_key='sk-proj-NxQYACsIlM8gR8sha6abT3BlbkFJuHDZjuAlmedrHjJRg6Wa'
+    api_key=os.environ["OPENAI_API_KEY"]
 )
 
 # Function to split audio file into smaller chunks
